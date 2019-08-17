@@ -71,7 +71,7 @@ user.scream()
 //Given an array = [2,3,4,5]:
 //It should return undefined
 
-
+// incorrect if you test the below example
 function firstRecurringCharacter(input) {
   for (let i = 0; i < input.length; i++) {
     for (let j = i + 1; j < input.length; j++) {
@@ -82,7 +82,7 @@ function firstRecurringCharacter(input) {
   }
   return undefined
 }
-
+// correct
 function firstRecurringCharacter2(input) {
   let map = {};
   for (let i = 0; i < input.length; i++) {
